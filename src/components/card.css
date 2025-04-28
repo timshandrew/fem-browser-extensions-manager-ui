@@ -6,6 +6,10 @@
         "button toggle";
 
     width: 20rem;
+    border-color: var(--color-neutral-200);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px
 }
 
 .card > * {
@@ -15,18 +19,29 @@
 
 .card img {
     grid-area: logo;
+    border-radius: 10px;
 }
 
 .card h3 {
     grid-area: title;
+    color: var(--color-neutral-900);
+    font: var(--font-preset-2);
 }
 
 .card p {
     grid-area: description;
+    color: var(--color-neutral-600);
+    font: var(--font-preset-5);
 }
 
 .card button {
     grid-area: button;
+    color: var(--color-neutral-900);
+    background-color: white;
+    border-color: var(--color-neutral-300);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 999px;
 }
 
 .card input {

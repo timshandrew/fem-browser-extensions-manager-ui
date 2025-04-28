@@ -21,6 +21,15 @@ body {
 
     --gradient-light: linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%);
     --gradient-dark: linear-gradient(180deg, #04091B 0%, #091540 100%);
+
+    /* Text */
+
+    --font-preset-1: 2.125rem/1.0 NotoSans;
+    --font-preset-2: 1.25rem/1.2 NotoSans;
+    --font-preset-3: 1.25rem/1.4 NotoSans;
+    --font-preset-4: 1.25rem/1.4 NotoSans;
+    --font-preset-5: 1.0rem/1.4 NotoSans;
+    --font-preset-6: 1.0rem/1.4 NotoSans;
 }
 
 *, *::before, *::after {
