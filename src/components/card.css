@@ -69,7 +69,7 @@
 
 .card label {
     align-self: end;
-    
+
     display: flex;
     justify-content: end;
     align-items: center;
@@ -90,7 +90,7 @@
     width: var(--_toggle-width);
     height: var(--_toggle-height);
     
-    background-color: var(--color-red-700);
+    background-color: var(--color-neutral-200);
     border-radius: 999px;
     cursor: pointer;
 
@@ -110,6 +110,10 @@
     border-radius: 999px;
 
     transition: 0.3s all ease-in-out;
+}
+
+.card input:checked {
+    background-color: var(--color-red-700);
 }
 
 .card input:checked::before {

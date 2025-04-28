@@ -1,11 +1,29 @@
 import Card from "./Card";
 import extensionData from "../assets/data.json";
 import "./extensionGrid.css";
+import { useState } from "react";
 
 export default function ExtensionGrid({ filterOption }) {
+    const [extensions, setExtensions] = useState(
+        extensionData.reduce((acc, item) => {
+            acc[item.name] = item;
+            return acc;
+        }, {})
+    );
+
+    function toggleExtension(name) {
+        setExtensions({
+            ...extensions,
+            [name]: {
+                ...extensions[name],
+                isActive: !extensions[name].isActive,
+            },
+        });
+    }
+
     return (
         <div className="extensionGrid">
-            {extensionData.map((extension) => {
+            {Object.values(extensions).map((extension) => {
                 return (
                     <Card
                         key={extension.name}
@@ -13,6 +31,7 @@ export default function ExtensionGrid({ filterOption }) {
                         name={extension.name}
                         description={extension.description}
                         isActive={extension.isActive}
+                        toggleExtension={() => toggleExtension(extension.name)}
                     />
                 );
             })}
