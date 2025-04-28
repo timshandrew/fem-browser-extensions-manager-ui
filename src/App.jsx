@@ -5,12 +5,10 @@ function App() {
     return (
         <>
             <Card
-                cardInfo={{
-                    logo: "./images/logo-style-spy.svg",
-                    name: "Card Name",
-                    description: "This is a card description.",
-                    isActive: true,
-                }}
+                logoSrc="./images/logo-style-spy.svg"
+                name="Card name"
+                description="This is a card description."
+                isActive={true}
             />
         </>
     );

@@ -1,12 +1,10 @@
 import "./card.css";
 
-export default function Card({ cardInfo }) {
-    const { logo, name, description, isActive } = cardInfo;
-
+export default function Card({ logoSrc, name, description, isActive }) {
     return (
         <div className="card">
             <h3>{name}</h3>
-            <img src={logo} alt="extension logo" />
+            <img src={logoSrc} alt="extension logo" />
             <p>{description}</p>
             <button type="button">Remove</button>
             <label>
