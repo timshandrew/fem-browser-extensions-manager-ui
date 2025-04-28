@@ -4,8 +4,9 @@
         "logo title"
         "logo description"
         "button toggle";
-
-    width: 25rem;
+    grid-template-rows: min-content 1fr 1fr;
+    width: 24rem;
+    height: 12.5rem;
     padding: 20px;
 
     border-color: var(--color-neutral-200);
@@ -28,6 +29,8 @@
     grid-area: title;
     color: var(--color-neutral-900);
     font: var(--font-preset-2);
+
+    margin-bottom: 0.5rem;
 }
 
 .card p {
@@ -37,7 +40,11 @@
 }
 
 .card button {
+    align-self: center;
     grid-area: button;
+    grid-column: span 2;
+    grid-row: 3;
+
     color: var(--color-neutral-900);
     background-color: white;
     border-color: var(--color-neutral-300);
@@ -45,18 +52,29 @@
     border-style: solid;
     border-radius: 999px;
     font: var(--font-preset-6);
+    line-height: 1.0;
+    cursor: pointer;
 
     padding: 8px;
+    width: 5.7rem;
+    height: 2.375rem;
 }
 
 .card span {
     display: none
 }
 
+.card label {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-row: 3;
+}
+
 .card input {
-    --_toggle-height: 3rem;
-    --_toggle-width: 6rem;
-    --_toggle-padding: 10px;
+    --_toggle-height: 1.25rem;
+    --_toggle-width: 2.25rem;
+    --_toggle-padding: calc(var(--_toggle-height) * 0.3);
     --_slider-radius: calc(var(--_toggle-height) - var(--_toggle-padding));
     --_slider-center-offset: calc((var(--_toggle-height) - var(--_slider-radius)) / 2);
     
@@ -67,7 +85,7 @@
     width: var(--_toggle-width);
     height: var(--_toggle-height);
     
-    background-color: var(--color-red-400);
+    background-color: var(--color-red-700);
     border-radius: 999px;
     cursor: pointer;
 

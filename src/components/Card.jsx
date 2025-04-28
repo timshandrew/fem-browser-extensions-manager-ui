@@ -6,9 +6,9 @@ export default function Card({ cardInfo }) {
     return (
         <div className="card">
             <h3>{name}</h3>
-            <img src={logo} />
+            <img src={logo} alt="extension logo" />
             <p>{description}</p>
-            <button>Remove</button>
+            <button type="button">Remove</button>
             <label>
                 <span>Extension active:</span>
                 <input type="checkbox" />
