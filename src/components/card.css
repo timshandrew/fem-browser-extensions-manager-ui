@@ -5,11 +5,13 @@
         "logo description"
         "button toggle";
 
-    width: 20rem;
+    width: 25rem;
+    padding: 20px;
+
     border-color: var(--color-neutral-200);
     border-width: 2px;
     border-style: solid;
-    border-radius: 20px
+    border-radius: 20px;
 }
 
 .card > * {
@@ -42,8 +44,47 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 999px;
+    font: var(--font-preset-6);
+
+    padding: 8px;
 }
 
 .card input {
+    --_toggle-height: 3rem;
+    --_toggle-width: 6rem;
+    --_toggle-padding: 10px;
+    --_slider-radius: calc(var(--_toggle-height) - var(--_toggle-padding));
+    --_slider-center-offset: calc((var(--_toggle-height) - var(--_slider-radius)) / 2);
+    
     grid-area: toggle;
+    appearance: none;
+    
+    position: relative;
+    width: var(--_toggle-width);
+    height: var(--_toggle-height);
+    
+    background-color: var(--color-red-400);
+    border-radius: 999px;
+    cursor: pointer;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.card input::before {
+    content: "";
+    position: absolute;
+    top: var(--_slider-center-offset);
+    transform: translateX(var(--_slider-center-offset));
+    
+    aspect-ratio: 1;
+    height: var(--_slider-radius);
+    
+    background-color: white;
+    border-radius: 999px;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.card input:checked::before {
+    transform: translateX(calc(var(--_toggle-width) - 100% - var(--_slider-center-offset)));
 }

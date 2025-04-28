@@ -9,7 +9,7 @@ export default function Card({ cardInfo }) {
             <img src={logo} />
             <p>{description}</p>
             <button>Remove</button>
-            <input type="checkbox" checked={isActive} />
+            <input type="checkbox" />
         </div>
     );
 }
