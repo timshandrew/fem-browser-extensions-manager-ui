@@ -51,3 +51,9 @@ input, button, textarea, select {
     font: inherit;
     color: inherit;
 }
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
