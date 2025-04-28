@@ -49,6 +49,10 @@
     padding: 8px;
 }
 
+.card span {
+    display: none
+}
+
 .card input {
     --_toggle-height: 3rem;
     --_toggle-width: 6rem;
