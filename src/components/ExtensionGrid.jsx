@@ -21,20 +21,35 @@ export default function ExtensionGrid({ filterOption }) {
         });
     }
 
+    function isIncluded(extension) {
+        switch (filterOption) {
+            case "all":
+                return true;
+            case "active":
+                return extension.isActive;
+            case "inactive":
+                return !extension.isActive;
+        }
+    }
+
     return (
         <div className="extensionGrid">
-            {Object.values(extensions).map((extension) => {
-                return (
-                    <Card
-                        key={extension.name}
-                        logoSrc={extension.logo}
-                        name={extension.name}
-                        description={extension.description}
-                        isActive={extension.isActive}
-                        toggleExtension={() => toggleExtension(extension.name)}
-                    />
-                );
-            })}
+            {Object.values(extensions)
+                .filter(isIncluded)
+                .map((extension) => {
+                    return (
+                        <Card
+                            key={extension.name}
+                            logoSrc={extension.logo}
+                            name={extension.name}
+                            description={extension.description}
+                            isActive={extension.isActive}
+                            toggleExtension={() =>
+                                toggleExtension(extension.name)
+                            }
+                        />
+                    );
+                })}
         </div>
     );
 }
