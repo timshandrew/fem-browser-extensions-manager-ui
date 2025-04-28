@@ -18,9 +18,8 @@ body {
     --color-red-400: #F25C54;
     --color-red-500: #DE4840;
     --color-red-700: #C7231A;
-
-    --gradient-light: linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%);
-    --gradient-dark: linear-gradient(180deg, #04091B 0%, #091540 100%);
+    --gradient-light: linear-gradient(#EBF2FC, #EEFBF9);
+    --gradient-dark: linear-gradient(#04091B , #091540);
 
     /* Text */
 
@@ -30,6 +29,8 @@ body {
     --font-preset-4: 1.25rem/1.4 NotoSans;
     --font-preset-5: 1.0rem/1.4 NotoSans;
     --font-preset-6: 1.0rem/1.4 NotoSans;
+
+    background: var(--gradient-light)
 }
 
 *, *::before, *::after {
@@ -50,10 +51,4 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
     font: inherit;
     color: inherit;
-}
-
-#root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

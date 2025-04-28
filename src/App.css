@@ -2,13 +2,19 @@
     display: flex;
     flex-direction: column;
     max-width: 80rem;
-    padding-block: 2rem;
+
+    padding: 2rem;
+    margin-inline: auto;
 }
 
 header {
     display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 0px #D9E5F4;
 
-    padding: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 4rem;
 }
 
 header .theme-toggle {
@@ -17,11 +23,29 @@ header .theme-toggle {
     align-items: center;
     margin-left: auto;
     aspect-ratio: 1;
-    height: 2rem;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.moon-icon {
+    width: 80%;
 }
 
 .extension-select-header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
     align-items: center;
+    font: var(--font-preset-1);
+
+    margin-bottom: 2rem;
+
+    @media (max-width: 730px) {
+        justify-content: center;
+    }
 }
 

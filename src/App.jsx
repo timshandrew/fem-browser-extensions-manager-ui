@@ -14,7 +14,7 @@ function App() {
             <header>
                 <img src={logo} alt="Project logo" />
                 <button type="button" className="theme-toggle">
-                    <img src={sunIcon} alt="Sun icon" className="sun-icon" />
+                    <img src={moonIcon} alt="Moon icon" className="moon-icon" />
                 </button>
             </header>
 
