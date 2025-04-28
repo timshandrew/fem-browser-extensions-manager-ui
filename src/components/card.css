@@ -1,0 +1,34 @@
+.card {
+    display: grid;
+    grid-template-areas: 
+        "logo title"
+        "logo description"
+        "button toggle";
+
+    width: 20rem;
+}
+
+.card > * {
+    padding: 0;
+    margin: 0;
+}
+
+.card img {
+    grid-area: logo;
+}
+
+.card h3 {
+    grid-area: title;
+}
+
+.card p {
+    grid-area: description;
+}
+
+.card button {
+    grid-area: button;
+}
+
+.card input {
+    grid-area: toggle;
+}
