@@ -30,7 +30,8 @@ body {
     --font-preset-5: 1.0rem/1.4 NotoSans;
     --font-preset-6: 1.0rem/1.4 NotoSans;
 
-    background: var(--gradient-light)
+    background: var(--gradient-light);
+    min-height: 100vh;
 }
 
 *, *::before, *::after {
