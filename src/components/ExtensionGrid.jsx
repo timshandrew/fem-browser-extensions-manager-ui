@@ -21,6 +21,14 @@ export default function ExtensionGrid({ filterOption }) {
         });
     }
 
+    function removeExtension(name) {
+        setExtensions((extensions) => {
+            let newExtensions = structuredClone(extensions);
+            delete newExtensions[name];
+            return newExtensions;
+        });
+    }
+
     function isIncluded(extension) {
         switch (filterOption) {
             case "all":
@@ -46,6 +54,9 @@ export default function ExtensionGrid({ filterOption }) {
                             isActive={extension.isActive}
                             toggleExtension={() =>
                                 toggleExtension(extension.name)
+                            }
+                            removeExtension={() =>
+                                removeExtension(extension.name)
                             }
                         />
                     );
