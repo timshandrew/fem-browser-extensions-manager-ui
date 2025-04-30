@@ -18,7 +18,7 @@
    
     border-radius: 999px;
     padding: 0.5rem 1rem;
-    background-color: white;
+    background-color: var(--layer1Color);
     box-shadow: 0 1px 2px 0px #B8C4D7;
 }
 

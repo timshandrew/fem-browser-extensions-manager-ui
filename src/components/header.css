@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 3px 0px #D9E5F4;
+
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 4rem;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    aspect-ratio: 1;
+    height: 3rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--color-accent-1000);
+}
+
+.theme-toggle img {
+    width: 80%;
+}

@@ -7,33 +7,6 @@
     margin-inline: auto;
 }
 
-header {
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 2px 3px 0px #D9E5F4;
-
-    padding: 0.5rem 0.7rem;
-    margin-bottom: 4rem;
-}
-
-header .theme-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    aspect-ratio: 1;
-    height: 3rem;
-    padding: 0.3rem;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.moon-icon {
-    width: 80%;
-}
-
 .extension-select-header {
     display: flex;
     flex-wrap: wrap;
@@ -41,11 +14,16 @@ header .theme-toggle {
     row-gap: 1rem;
     align-items: center;
     font: var(--font-preset-1);
+    
 
     margin-bottom: 2rem;
 
     @media (max-width: 730px) {
         justify-content: center;
     }
+}
+
+.extension-select-header h2 {
+    color: var(--accentTextColor);
 }
 

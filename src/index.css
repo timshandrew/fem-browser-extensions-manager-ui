@@ -32,6 +32,12 @@ body {
 
     background: var(--gradient-light);
     min-height: 100vh;
+
+    /* Theming variables */
+    --bgGradient: var(--gradient-light);
+
+    /* Linking Theme Variables */
+    background: var(--bgGradient);
 }
 
 *, *::before, *::after {

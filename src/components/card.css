@@ -13,7 +13,7 @@
     border-style: solid;
     border-radius: 20px;
 
-    background: white;
+    background: var(--layer1Color);
     box-shadow: 0 2px 2px 0px #c2cee161;
 }
 
@@ -30,7 +30,7 @@
 
 .card h3 {
     grid-area: title;
-    color: var(--color-neutral-900);
+    color: var(--accentTextColor);
     font: var(--font-preset-2);
 
     margin-bottom: 0.5rem;
@@ -38,7 +38,7 @@
 
 .card p {
     grid-area: description;
-    color: var(--color-neutral-600);
+    color: var(--textColor);
     font: var(--font-preset-5);
 }
 
@@ -48,8 +48,8 @@
     grid-column: span 2;
     grid-row: 3;
 
-    color: var(--color-neutral-900);
-    background-color: white;
+    color: var(--accentTextColor);
+    background-color: inherit;
     border-color: var(--color-neutral-300);
     border-width: 2px;
     border-style: solid;
