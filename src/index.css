@@ -5,6 +5,8 @@
 
 body {
     font-family: NotoSans;
+    min-height: 100vh;
+    background: var(--bgGradient);
 
     /* Colors */
     --color-neutral-900: #091540;
@@ -29,11 +31,6 @@ body {
     --font-preset-4: 1.25rem/1.4 NotoSans;
     --font-preset-5: 1.0rem/1.4 NotoSans;
     --font-preset-6: 1.0rem/1.4 NotoSans;
-
-    min-height: 100vh;
-
-    /* Linking Theme Variables */
-    background: var(--bgGradient);
 }
 
 .dark {
@@ -42,18 +39,18 @@ body {
     --secondaryColor: var(--color-neutral-700);
     --borderColor: var(--color-neutral-600);
     --textPrimaryColor: var(--color-neutral-300);
-    --textAccentColor: white;
+    --textAccentColor: var(--color-neutral-100);
     --textAccentOppositeColor: var(--color-neutral-900);
 }
 
 .light {
     --bgGradient: var(--gradient-light);
-    --primaryColor: white;
+    --primaryColor: var(--color-neutral-100);
     --secondaryColor: var(--color-neutral-100);
     --borderColor: var(--color-neutral-200);
     --textPrimaryColor: var(--color-neutral-600);
     --textAccentColor: var(--color-neutral-900);
-    --textAccentOppositeColor: white;
+    --textAccentOppositeColor: var(--color-neutral-100);
 }
 
 *, *::before, *::after {

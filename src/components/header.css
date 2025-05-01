@@ -1,11 +1,15 @@
 header {
     display: flex;
-    background-color: var(--primaryColor);;
+    background-color: var(--primaryColor);
+    box-shadow: 0 2px 2px 0px var(--borderColor);
     border-radius: 20px;
-
 
     padding: 0.5rem 0.7rem;
     margin-bottom: 4rem;
+}
+
+.logo-text {
+    fill: var(--textAccentColor);
 }
 
 .theme-toggle {
