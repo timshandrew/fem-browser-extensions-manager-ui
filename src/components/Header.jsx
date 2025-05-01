@@ -9,37 +9,11 @@ export default function Header() {
 
     useEffect(() => {
         if (isDarkMode) {
-            for (const styleName in darkThemeStyles) {
-                document.body.style.setProperty(
-                    `--${styleName}`,
-                    darkThemeStyles[styleName]
-                );
-            }
+            document.body.classList = "dark";
         } else {
-            for (const styleName in lightThemeStyles) {
-                document.body.style.setProperty(
-                    `--${styleName}`,
-                    lightThemeStyles[styleName]
-                );
-            }
+            document.body.classList = "light";
         }
     }, [isDarkMode]);
-
-    const lightThemeStyles = {
-        bgGradient: "linear-gradient(#EBF2FC, #EEFBF9)",
-        layer1Color: "white",
-        layer2Color: "#EEEEEE",
-        textColor: "#535868",
-        accentTextColor: "#091540",
-    };
-
-    const darkThemeStyles = {
-        bgGradient: "linear-gradient(#04091B , #091540)",
-        layer1Color: "#535868",
-        layer2Color: "#2F364B",
-        textColor: "#C6C6C6",
-        accentTextColor: "white",
-    };
 
     return (
         <header>

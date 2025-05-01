@@ -1,8 +1,8 @@
 header {
     display: flex;
-    background-color: white;
+    background-color: var(--primaryColor);;
     border-radius: 20px;
-    box-shadow: 0 2px 3px 0px #D9E5F4;
+
 
     padding: 0.5rem 0.7rem;
     margin-bottom: 4rem;
@@ -20,7 +20,7 @@ header {
     border: none;
     cursor: pointer;
 
-    background-color: var(--color-accent-1000);
+    background-color: var(--secondaryColor);
 }
 
 .theme-toggle img {

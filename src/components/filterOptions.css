@@ -12,18 +12,18 @@
 }
 
 .filter-options label {
-    border: 1px solid var(--color-neutral-200);
+    border: 1px solid var(--borderColor);
+    color: var(--textAccentColor);
     font: inherit;
     cursor: pointer;
    
     border-radius: 999px;
     padding: 0.5rem 1rem;
-    background-color: var(--layer1Color);
-    box-shadow: 0 1px 2px 0px #B8C4D7;
+    background-color: var(--primaryColor);
 }
 
 .filter-options label:has(input:checked) {
     background-color: var(--color-red-700);
-    color: white;
     border: none;
+    color: var(--textAccentOppositeColor);
 }

@@ -8,13 +8,13 @@
 
     padding: 20px;
 
-    border-color: var(--color-neutral-200);
+    border-color: var(--borderColor);
     border-width: 2px;
     border-style: solid;
     border-radius: 20px;
 
-    background: var(--layer1Color);
-    box-shadow: 0 2px 2px 0px #c2cee161;
+    background: var(--primaryColor);
+    box-shadow: 0 2px 2px 0px var(--borderColor);
 }
 
 .card > * {
@@ -30,7 +30,7 @@
 
 .card h3 {
     grid-area: title;
-    color: var(--accentTextColor);
+    color: var(--textAccentColor);
     font: var(--font-preset-2);
 
     margin-bottom: 0.5rem;
@@ -38,7 +38,7 @@
 
 .card p {
     grid-area: description;
-    color: var(--textColor);
+    color: var(--textPrimaryColor);
     font: var(--font-preset-5);
 }
 
@@ -48,9 +48,9 @@
     grid-column: span 2;
     grid-row: 3;
 
-    color: var(--accentTextColor);
+    color: var(--textAccentColor);
     background-color: inherit;
-    border-color: var(--color-neutral-300);
+    border-color: var(--borderColor);
     border-width: 2px;
     border-style: solid;
     border-radius: 999px;

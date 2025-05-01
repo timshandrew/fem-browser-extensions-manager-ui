@@ -30,14 +30,30 @@ body {
     --font-preset-5: 1.0rem/1.4 NotoSans;
     --font-preset-6: 1.0rem/1.4 NotoSans;
 
-    background: var(--gradient-light);
     min-height: 100vh;
-
-    /* Theming variables */
-    --bgGradient: var(--gradient-light);
 
     /* Linking Theme Variables */
     background: var(--bgGradient);
+}
+
+.dark {
+    --bgGradient: var(--gradient-dark);
+    --primaryColor: var(--color-neutral-800);
+    --secondaryColor: var(--color-neutral-700);
+    --borderColor: var(--color-neutral-600);
+    --textPrimaryColor: var(--color-neutral-300);
+    --textAccentColor: white;
+    --textAccentOppositeColor: var(--color-neutral-900);
+}
+
+.light {
+    --bgGradient: var(--gradient-light);
+    --primaryColor: white;
+    --secondaryColor: var(--color-neutral-100);
+    --borderColor: var(--color-neutral-200);
+    --textPrimaryColor: var(--color-neutral-600);
+    --textAccentColor: var(--color-neutral-900);
+    --textAccentOppositeColor: white;
 }
 
 *, *::before, *::after {
